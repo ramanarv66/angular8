@@ -1,0 +1,22 @@
+<div class="col-md-6">
+  <h6 class="text-align">Create Employee</h6>
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input class="form-control" [(ngModel)]="emp.empname" placeholder="empname"  name="empname" id="empname"/>
+    </div>
+    <div class="form-group">
+      <label for="designation">designation</label>
+      <input class="form-control" [(ngModel)]="emp.designation" placeholder="designation"  name="designation" id="designation"/>
+    </div>
+    <div class="form-group">
+      <label for="EmpId">EmpId</label>
+      <input [(ngModel)]="emp.empId" name="empId" placeholder="empid" class="form-control"/>
+    </div>
+    <button class="btn btn-primary" (click)="createEmployee()">Create Employee</button>
+  </form>
+
+  <div *ngIf="dataSave" class="alert alert-success">
+      <strong>Success!</strong> Data Save Successfully!!.
+    </div>
+</div>

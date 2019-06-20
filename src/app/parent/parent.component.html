@@ -1,0 +1,11 @@
+  <div class="row">
+    <h5>ParentComponent</h5>
+  </div>
+  <div class="row">
+    Event Emitted from Child {{message}}
+  </div>
+<div class="container">
+  <div class="row">
+    <app-child [valuefromparent]="name" (childEvent)="parentHandleMethod($event)"></app-child>
+  </div>
+</div>
